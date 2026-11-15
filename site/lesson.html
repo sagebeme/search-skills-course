@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson (Find It Free)</title>
+<meta name="description" content="One lesson of Find It Free: what to search, where, and an exercise to try it.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sofia+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="page-lesson">
+<a class="skip" href="#lesson">Skip to the lesson</a>
+
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="wordmark" href="index.html">Find It Free</a>
+    <nav aria-label="Main">
+      <ul class="nav__links">
+        <li><a href="index.html#lessons">Lessons</a></li>
+        <li><a href="index.html#search">Search</a></li>
+        <li><a href="lesson.html?l=cheatsheet">Cheat sheet</a></li>
+        <li><a href="lesson.html?l=resources">Resource list</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <header class="lesson-head">
+    <div class="container lesson-head__grid">
+      <span class="disc disc--big num" id="lesson-num" aria-hidden="true" hidden></span>
+      <div>
+        <h1 id="lesson-title">Find It Free</h1>
+        <p class="lesson-head__meta" id="lesson-meta"></p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container lesson-layout">
+    <article class="prose" id="lesson" tabindex="-1">
+      <noscript><p>This page needs JavaScript to show the lesson. You can still read every lesson as a plain text file in the <code>lessons</code> folder next to this site.</p></noscript>
+    </article>
+
+    <aside class="side" id="side" aria-label="Your progress" hidden>
+      <div class="side__card" id="stamp-card">
+        <h2 class="side__title">Your card</h2>
+        <p class="side__status" id="stamp-status" role="status">Not stamped yet.</p>
+        <button class="btn btn--primary" type="button" id="stamp-btn">Stamp my card</button>
+        <span class="stamp stamp--big" id="stamp-mark" hidden></span>
+      </div>
+
+      <nav class="side__toc" aria-labelledby="toc-title">
+        <h2 class="side__title" id="toc-title">On this page</h2>
+        <ol id="toc" role="list"></ol>
+      </nav>
+
+      <div class="side__notes">
+        <label class="side__title" for="notes">Your exercise notes</label>
+        <textarea id="notes" rows="7" placeholder="Write your searches and what you found."></textarea>
+        <p class="side__hint" id="notes-status">Saved in this browser as you type.</p>
+      </div>
+    </aside>
+  </div>
+
+  <nav class="pager container" id="pager" aria-label="Next and previous lessons"></nav>
+</main>
+
+<footer class="footer footer--small">
+  <div class="container">
+    <p class="footer__mark">Find It Free</p>
+    <ul class="footer__links" role="list">
+      <li><a href="index.html#lessons">Lessons</a></li>
+      <li><a href="lesson.html?l=resources">Resource list</a></li>
+      <li><a href="lesson.html?l=cheatsheet">Cheat sheet</a></li>
+      <li><a href="lesson.html?l=about">About this course</a></li>
+    </ul>
+    <p class="footer__credits" data-credits>Photographs: <a href="https://commons.wikimedia.org/wiki/File:Suzzallo_Reading_Room_University_of_Washington_restoration_Seattle_Washington_2026.jpg">Guywelch2000</a> (CC BY 4.0), <a href="https://commons.wikimedia.org/w/index.php?curid=621952">Tomomarusan</a> (CC BY 2.5), <a href="https://commons.wikimedia.org/w/index.php?curid=15309871">Haimlevy</a> (CC BY-SA 3.0), via Wikimedia Commons. Screenshots show the free tools each lesson teaches.</p>
+  </div>
+</footer>
+
+<script src="assets/vendor/marked.umd.js"></script>
+<script src="assets/course-data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

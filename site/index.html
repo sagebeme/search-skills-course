@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find It Free</title>
+<meta name="description" content="A free beginner course on finding free, trustworthy knowledge online with Google, Telegram and Reddit, and on dodging scams.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sofia+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the lessons</a>
+
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="wordmark" href="index.html">Find It Free</a>
+    <nav aria-label="Main">
+      <ul class="nav__links">
+        <li><a href="#lessons">Lessons</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="lesson.html?l=cheatsheet">Cheat sheet</a></li>
+        <li><a href="lesson.html?l=resources">Resource list</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <h1 id="hero-title">Your free library card</h1>
+        <p class="lead">Nine short lessons on finding free, trustworthy knowledge on the internet.</p>
+        <div class="actions">
+          <a class="btn btn--primary" id="hero-start" href="lesson.html?l=00-how-to-search-well">Start lesson 00</a>
+          <a class="btn" href="#search">Search the course</a>
+        </div>
+      </div>
+
+      <figure class="card-wrap">
+        <div class="libcard" aria-labelledby="card-title">
+          <div class="libcard__top">
+            <h2 id="card-title" class="libcard__title">Library card</h2>
+            <label class="libcard__holder">
+              <span>Card holder</span>
+              <input id="holder" type="text" autocomplete="off" maxlength="40" placeholder="Write your name">
+            </label>
+          </div>
+          <div class="libcard__cols" aria-hidden="true"><span>No.</span><span>Lesson</span><span>Stamped</span></div>
+          <ol class="libcard__rows" role="list">
+<!-- build:card -->
+      <li><a href="lesson.html?l=00-how-to-search-well"><span class="card-no num">00</span><span class="card-title">How to search well</span><span class="card-stamp" data-stamp="00-how-to-search-well"></span></a></li>
+      <li><a href="lesson.html?l=01-google-search-operators"><span class="card-no num">01</span><span class="card-title">Google search operators</span><span class="card-stamp" data-stamp="01-google-search-operators"></span></a></li>
+      <li><a href="lesson.html?l=02-google-free-sources"><span class="card-no num">02</span><span class="card-title">Free official sources</span><span class="card-stamp" data-stamp="02-google-free-sources"></span></a></li>
+      <li><a href="lesson.html?l=03-beyond-google"><span class="card-no num">03</span><span class="card-title">Beyond Google</span><span class="card-stamp" data-stamp="03-beyond-google"></span></a></li>
+      <li><a href="lesson.html?l=04-telegram"><span class="card-no num">04</span><span class="card-title">Telegram</span><span class="card-stamp" data-stamp="04-telegram"></span></a></li>
+      <li><a href="lesson.html?l=05-reddit"><span class="card-no num">05</span><span class="card-title">Reddit</span><span class="card-stamp" data-stamp="05-reddit"></span></a></li>
+      <li><a href="lesson.html?l=06-spotting-scams"><span class="card-no num">06</span><span class="card-title">Spotting scams</span><span class="card-stamp" data-stamp="06-spotting-scams"></span></a></li>
+      <li><a href="lesson.html?l=07-free-legal-learning"><span class="card-no num">07</span><span class="card-title">Free, legal learning</span><span class="card-stamp" data-stamp="07-free-legal-learning"></span></a></li>
+      <li><a href="lesson.html?l=08-final-project"><span class="card-no num">08</span><span class="card-title">Final project</span><span class="card-stamp" data-stamp="08-final-project"></span></a></li>
+<!-- /build:card -->
+          </ol>
+          <p class="libcard__foot" id="card-foot" role="status">Finish a lesson and press <strong>Stamp my card</strong> at the end of it.</p>
+        </div>
+        <figcaption class="tag">Costs nothing</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="search-band" id="search" aria-labelledby="search-title">
+    <div class="container search-band__grid">
+      <div class="search-band__head">
+        <h2 id="search-title">Try the tricks on this course</h2>
+        <p class="lead">This search box understands quotes, minus and OR, just like Google.</p>
+        <p class="search-band__try">Try one:</p>
+        <ul class="chips" role="list">
+          <li><button type="button" class="chip" data-q='"wayback machine"'>"wayback machine"</button></li>
+          <li><button type="button" class="chip" data-q="scam -telegram">scam -telegram</button></li>
+          <li><button type="button" class="chip" data-q="textbook OR library">textbook OR library</button></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <form id="search-form" role="search" action="#search">
+          <label class="visually-hidden" for="q">Search all lessons</label>
+          <input id="q" name="q" type="search" autocomplete="off" spellcheck="false" placeholder='Search, e.g. "open textbook" -amazon'>
+          <button class="btn btn--primary" type="submit">Search</button>
+        </form>
+        <p class="search-help" id="search-status" role="status" aria-live="polite">Type a word, or tap an example.</p>
+        <table class="howto" id="howto">
+          <caption class="visually-hidden">The four search tricks this box understands</caption>
+          <thead><tr><th scope="col">Type</th><th scope="col">It finds sections</th></tr></thead>
+          <tbody>
+            <tr><td><kbd>free textbook</kbd></td><td>with both words</td></tr>
+            <tr><td><kbd>"open access"</kbd></td><td>with that exact phrase</td></tr>
+            <tr><td><kbd>course -paid</kbd></td><td>with course, but not paid</td></tr>
+            <tr><td><kbd>reddit OR telegram</kbd></td><td>with either word</td></tr>
+          </tbody>
+        </table>
+        <ol class="results" id="results" role="list"></ol>
+        <noscript><p class="search-help">The search box needs JavaScript. Every lesson is still listed below.</p></noscript>
+      </div>
+    </div>
+  </section>
+
+  <section class="lessons" id="lessons" aria-labelledby="lessons-title">
+    <div class="container">
+      <div class="lessons__head">
+        <h2 id="lessons-title"><!-- build:count -->
+9<!-- /build:count --> lessons, one exercise each</h2>
+        <p class="lead">Do them in order. Each one shows the real free tool it teaches.</p>
+      </div>
+      <ol class="lesson-grid" role="list">
+<!-- build:grid -->
+      <li class="lesson-card" style="--tilt: -1.6deg">
+        <a href="lesson.html?l=00-how-to-search-well">
+          <span class="shot" data-slot="lesson-00" data-kind="photo" data-alt="A magnifying glass with a black handle on white paper"><img src="images/magnifying-glass.webp" alt="A magnifying glass with a black handle on white paper" loading="lazy" decoding="async" style="object-position: 50% 30%"></span>
+          <span class="lesson-card__text">
+            <span class="lesson-card__head"><span class="disc num" aria-hidden="true">00</span><h3><span class="visually-hidden">Lesson 00: </span>How to search well</h3></span>
+            <span class="lesson-card__blurb">Pick the words the answer uses, then check who is talking.</span>
+            <small>30 minutes<span class="card-done" data-done="00-how-to-search-well"></span></small>
+          </span>
+        </a>
+      </li>
+      <li class="lesson-card" style="--tilt: 1.2deg">
+        <a href="lesson.html?l=01-google-search-operators">
+          <span class="shot" data-slot="lesson-01" data-kind="product" data-alt="Google Advanced Search, with boxes for exact phrase, none of these words, and site"><img src="images/google-advanced.webp" alt="Google Advanced Search, with boxes for exact phrase, none of these words, and site" loading="lazy" decoding="async" style="object-position: 0% 30%"></span>
+          <span class="lesson-card__text">
+            <span class="lesson-card__head"><span class="disc num" aria-hidden="true">01</span><h3><span class="visually-hidden">Lesson 01: </span>Google search operators</h3></span>
+            <span class="lesson-card__blurb">Quotes, minus, site: and filetype: to skip the junk.</span>
+            <small>45 minutes<span class="card-done" data-done="01-google-search-operators"></span></small>
+          </span>
+        </a>
+      </li>
+      <li class="lesson-card" style="--tilt: -0.8deg">
+        <a href="lesson.html?l=02-google-free-sources">
+          <span class="shot" data-slot="lesson-02" data-kind="product" data-alt="The Wayback Machine home page with its search box"><img src="images/wayback.webp" alt="The Wayback Machine home page with its search box" loading="lazy" decoding="async" style="object-position: 40% 20%"></span>
+          <span class="lesson-card__text">
+            <span class="lesson-card__head"><span class="disc num" aria-hidden="true">02</span><h3><span class="visually-hidden">Lesson 02: </span>Free official sources</h3></span>
+            <span class="lesson-card__blurb">Reports, research papers, old web pages and raw data.</span>
+            <small>45 minutes<span class="card-done" data-done="02-google-free-sources"></span></small>
+          </span>
+        </a>
+      </li>
+      <li class="lesson-card" style="--tilt: 1.8deg">
+        <a href="lesson.html?l=03-beyond-google">
+          <span class="shot" data-slot="lesson-03" data-kind="product" data-alt="Marginalia Search, a search engine for small non-commercial websites"><img src="images/marginalia.webp" alt="Marginalia Search, a search engine for small non-commercial websites" loading="lazy" decoding="async" style="object-position: 20% 0%"></span>
+          <span class="lesson-card__text">
+            <span class="lesson-card__head"><span class="disc num" aria-hidden="true">03</span><h3><span class="visually-hidden">Lesson 03: </span>Beyond Google</h3></span>
+            <span class="lesson-card__blurb">Other search engines, Wikipedia done right, free libraries.</span>
+            <small>40 minutes<span class="card-done" data-done="03-beyond-google"></span></small>
+          </span>
+        </a>
+      </li>
+      <li class="lesson-card" style="--tilt: -1.2deg">
+        <a href="lesson.html?l=04-telegram">
+          <span class="shot" data-slot="lesson-04" data-kind="product" data-alt="A public Telegram channel read in a web browser, showing subscribers and views"><img src="images/telegram.webp" alt="A public Telegram channel read in a web browser, showing subscribers and views" loading="lazy" decoding="async" style="object-position: 50% 0%"></span>
+          <span class="lesson-card__text">
+            <span class="lesson-card__head"><span class="disc num" aria-hidden="true">04</span><h3><span class="visually-hidden">Lesson 04: </span>Telegram</h3></span>
+            <span class="lesson-card__blurb">Find real learning channels and spot the fake ones.</span>
+            <small>40 minutes<span class="card-done" data-done="04-telegram"></span></small>
+          </span>
+        </a>
+      </li>
+      <li class="lesson-card" style="--tilt: 0.9deg">
+        <a href="lesson.html?l=05-reddit">
+          <span class="shot" data-slot="lesson-05" data-kind="product" data-alt="The r/learnprogramming FAQ wiki page on Reddit"><img src="images/reddit-wiki.webp" alt="The r/learnprogramming FAQ wiki page on Reddit" loading="lazy" decoding="async" style="object-position: 60% 20%"></span>
+          <span class="lesson-card__text">
+            <span class="lesson-card__head"><span class="disc num" aria-hidden="true">05</span><h3><span class="visually-hidden">Lesson 05: </span>Reddit</h3></span>
+            <span class="lesson-card__blurb">Community wikis, honest reviews, and hidden ads.</span>
+            <small>40 minutes<span class="card-done" data-done="05-reddit"></span></small>
+          </span>
+        </a>
+      </li>
+      <li class="lesson-card" style="--tilt: -1.8deg">
+        <a href="lesson.html?l=06-spotting-scams">
+          <span class="shot" data-slot="lesson-06" data-kind="product" data-alt="VirusTotal, where you can check a link or file for malware"><img src="images/virustotal.webp" alt="VirusTotal, where you can check a link or file for malware" loading="lazy" decoding="async" style="object-position: 50% 10%"></span>
+          <span class="lesson-card__text">
+            <span class="lesson-card__head"><span class="disc num" aria-hidden="true">06</span><h3><span class="visually-hidden">Lesson 06: </span>Spotting scams</h3></span>
+            <span class="lesson-card__blurb">Fake course channels, poisoned downloads, phishing links.</span>
+            <small>40 minutes<span class="card-done" data-done="06-spotting-scams"></span></small>
+          </span>
+        </a>
+      </li>
+      <li class="lesson-card" style="--tilt: 1.4deg">
+        <a href="lesson.html?l=07-free-legal-learning">
+          <span class="shot" data-slot="lesson-07" data-kind="product" data-alt="OpenStax, free peer-reviewed textbooks, with sociology and physics covers"><img src="images/openstax.webp" alt="OpenStax, free peer-reviewed textbooks, with sociology and physics covers" loading="lazy" decoding="async" style="object-position: 100% 45%"></span>
+          <span class="lesson-card__text">
+            <span class="lesson-card__head"><span class="disc num" aria-hidden="true">07</span><h3><span class="visually-hidden">Lesson 07: </span>Free, legal learning</h3></span>
+            <span class="lesson-card__blurb">Free courses, open textbooks, library apps, official docs.</span>
+            <small>45 minutes<span class="card-done" data-done="07-free-legal-learning"></span></small>
+          </span>
+        </a>
+      </li>
+      <li class="lesson-card" style="--tilt: -1deg">
+        <a href="lesson.html?l=08-final-project">
+          <span class="shot" data-slot="lesson-08" data-kind="photo" data-alt="A gothic university reading room with long tables and chandeliers"><img src="images/reading-room-seattle.webp" alt="A gothic university reading room with long tables and chandeliers" loading="lazy" decoding="async" style="object-position: 50% 50%"></span>
+          <span class="lesson-card__text">
+            <span class="lesson-card__head"><span class="disc num" aria-hidden="true">08</span><h3><span class="visually-hidden">Lesson 08: </span>Final project</h3></span>
+            <span class="lesson-card__blurb">Build your own free plan to learn one real thing.</span>
+            <small>2 to 3 hours, can be spread across several days<span class="card-done" data-done="08-final-project"></span></small>
+          </span>
+        </a>
+      </li>
+<!-- /build:grid -->
+      </ol>
+    </div>
+  </section>
+
+  <section class="refuse" aria-labelledby="refuse-title">
+    <div class="container refuse__grid">
+      <h2 id="refuse-title" class="display-s">No piracy.<br> No doxxing.<br> No leaked passwords.</h2>
+      <div class="refuse__side">
+        <p>Every trick here finds free, legal knowledge. The dodgy stuff is where the malware and the scams live, and Lesson 06 shows why.</p>
+        <a class="btn btn--light" href="lesson.html?l=about#what-this-course-will-not-teach-and-why">Read why</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="library" aria-labelledby="library-title">
+    <div class="container library__grid">
+      <figure class="library__photo">
+        <span class="shot shot--big" data-slot="library" data-kind="photo" data-alt="A public library reading room"><img src="images/reading-room-paris.webp" alt="The iron-vaulted reading room of the Sainte-Genevi&egrave;ve library in Paris, with long tables and green lamps" loading="lazy" decoding="async"></span>
+        <figcaption>Sainte-Genevi&egrave;ve library, Paris. Free to read in since 1851.</figcaption>
+      </figure>
+      <div class="library__text">
+        <h2 id="library-title"><!-- build:sites -->
+73<!-- /build:sites --> free sites in one list</h2>
+        <p class="lead">Search engines, open textbooks, research papers, public data and fact-checkers, sorted by what they are for.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="lesson.html?l=resources">Open the resource list</a>
+          <a class="btn" href="lesson.html?l=cheatsheet">Cheat sheet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer__mark">Find It Free</p>
+    <ul class="footer__links" role="list">
+      <li><a href="#lessons">Lessons</a></li>
+      <li><a href="lesson.html?l=resources">Resource list</a></li>
+      <li><a href="lesson.html?l=cheatsheet">Cheat sheet</a></li>
+      <li><a href="lesson.html?l=about">About this course</a></li>
+    </ul>
+    <p class="footer__note">A private course, kept on this computer. Your name, stamps and notes stay in this browser.</p>
+    <p class="footer__credits" data-credits>Photographs: <a href="https://commons.wikimedia.org/wiki/File:Salle_de_lecture_Bibliotheque_Sainte-Genevieve_n03.jpg">Marie-Lan Nguyen</a> (CC BY 2.0 fr), <a href="https://commons.wikimedia.org/wiki/File:Suzzallo_Reading_Room_University_of_Washington_restoration_Seattle_Washington_2026.jpg">Guywelch2000</a> (CC BY 4.0), <a href="https://commons.wikimedia.org/w/index.php?curid=621952">Tomomarusan</a> (CC BY 2.5), <a href="https://commons.wikimedia.org/w/index.php?curid=15309871">Haimlevy</a> (CC BY-SA 3.0), all via Wikimedia Commons. Screenshots show the free tools each lesson teaches, taken 15 November 2026.</p>
+  </div>
+</footer>
+
+<script src="assets/course-data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

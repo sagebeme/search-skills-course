@@ -27,6 +27,16 @@ This course teaches exactly that, in plain words, one small step at a time.
 
 ---
 
+## Open the course site
+
+There's a fun, clickable version of the course in the `site` folder.
+
+- **Easiest:** double-click `site/index.html`. It opens in your browser, no internet or
+  server needed (the fonts need internet; without it the site still works with plainer fonts).
+- Write your name on the library card, then press **Stamp my card** at the end of each
+  lesson. Your stamps, ticks and notes are saved in that browser only.
+- **Changed a lesson?** Run `node site/build.mjs` from this folder so the site picks it up.
+
 ## The lessons
 
 Work through them in order. Each one ends with an exercise. Do it: searching is

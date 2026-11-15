@@ -1,0 +1,48 @@
+[
+ {
+  "file": "assets/magnifying-glass.jpg",
+  "media": "image",
+  "ref": "openverse:745a2ce9-6f19-4718-b0f3-90bcee790733",
+  "title": "Magnifying glass",
+  "creator": "Tomomarusan",
+  "creatorUrl": "https://commons.wikimedia.org/wiki/User:Tomomarusan",
+  "date": null,
+  "license": "CC BY 2.5",
+  "licenseCode": "by",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/w/index.php?curid=621952",
+  "via": "Wikimedia Commons",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/Magnifying_glass.jpg",
+  "width": 1304,
+  "height": 2067,
+  "bytes": 167057,
+  "credit": "\"Magnifying glass\" by Tomomarusan, CC BY 2.5, via Wikimedia Commons",
+  "notes": [],
+  "saved": "2026-11-15T13:53:21.398Z"
+ },
+ {
+  "file": "assets/scholem-card-catalog.jpg",
+  "media": "image",
+  "ref": "openverse:7cc3dfa0-2292-4974-a4b2-adf9b3f3cc4b",
+  "title": "Scholem card catalog",
+  "creator": "Haimlevy",
+  "creatorUrl": "https://commons.wikimedia.org/wiki/User:Haimlevy",
+  "date": null,
+  "license": "CC BY-SA 3.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/w/index.php?curid=15309871",
+  "via": "Wikimedia Commons",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Scholem_card_catalog.jpg/1920px-Scholem_card_catalog.jpg",
+  "width": 1920,
+  "height": 3210,
+  "bytes": 1198456,
+  "credit": "\"Scholem card catalog\" by Haimlevy, CC BY-SA 3.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+  ],
+  "saved": "2026-11-15T13:53:27.454Z"
+ }
+]
