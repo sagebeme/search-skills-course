@@ -103,10 +103,10 @@ reading the last two pieces of it:
 
 | Link | Who really owns it |
 |---|---|
-| `https://www.coursera.org/learn/python` | coursera.org ✅ |
-| `https://coursera.org.free-courses.xyz/login` | **free-courses.xyz** ❌ |
-| `https://courserra.org/login` | **courserra.org** ❌ (extra r) |
-| `https://login-coursera.com` | **login-coursera.com** ❌ (not Coursera's site) |
+| `https://www.coursera.org/learn/python` | coursera.org (real) |
+| `https://coursera.org.free-courses.xyz/login` | **free-courses.xyz** (fake) |
+| `https://courserra.org/login` | **courserra.org** (fake, extra r) |
+| `https://login-coursera.com` | **login-coursera.com** (fake, not Coursera's site) |
 
 Also watch for:
 
@@ -178,7 +178,7 @@ Remember **SIFT** from Lesson 00. Extra signs of fake info:
 <details>
 <summary>Answers for question 1</summary>
 
-1. edx.org ✅ 2. org-certificates.com ❌ 3. learn-free.net ❌ 4. khanacademy.org ✅
-5. verify-account.info ❌
+1. edx.org (real) 2. org-certificates.com (fake) 3. learn-free.net (fake) 4. khanacademy.org (real)
+5. verify-account.info (fake)
 
 </details>
