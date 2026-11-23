@@ -7,8 +7,7 @@ legally. The hard part is **finding** it and **knowing whether to trust it**.
 
 This course teaches exactly that, in plain words, one small step at a time.
 
-> **Private course.** This folder lives on your own computer only.
-> It is not on GitHub and should not be uploaded there.
+> **Read it online:** https://sagebeme.github.io/search-skills-course/
 
 ---
 
