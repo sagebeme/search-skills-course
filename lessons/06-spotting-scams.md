@@ -139,6 +139,8 @@ Remember **SIFT** from Lesson 00. Extra signs of fake info:
 - **Old photos shared as new.** Use reverse image search (Lesson 03).
 - **"Doctors don't want you to know..."** or "they're hiding this from you".
 - **Numbers with no source.**
+- **An AI answer at the top of a search page.** It can be wrong, and it doesn't
+  say who wrote it. Open the pages it links to and check those (Lesson 01).
 - It perfectly confirms what you already believed. That's exactly when to
   check harder.
 

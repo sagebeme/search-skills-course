@@ -31,8 +31,10 @@ Then search for those words.
 ## 2. Start broad, then narrow down
 
 1. Do a quick, simple search.
-2. Look at the first results. Notice the **words they use**, especially words
-   experts use that you didn't know.
+2. Look at the first few results. Notice the **words they use**, especially
+   words experts use that you didn't know. (Google often puts an AI-written
+   answer above the links. It can give you good words too, but it can be wrong:
+   Lesson 01 shows how to check it, or hide it.)
 3. Search again using those better words.
 
 Example: you search `why is my phone battery dying fast` and the results keep
@@ -83,6 +85,10 @@ reading"): instead of reading one page from top to bottom, open **new tabs** to
 check what *other* sites say about it. Professional fact-checkers do this
 within seconds.
 
+SIFT works on AI answers too, like the AI box at the top of Google or a chatbot's
+reply. An AI answer is not a source: it's a summary of other pages, and it can
+be wrong. Open the pages it links to and run SIFT on **those**.
+
 ### Quick trust questions for any source
 
 | Question | Good sign | Warning sign |
@@ -105,7 +111,7 @@ question you've had for ages). Then:
 3. Search once. Write down **two new words** you saw in the results that you
    didn't know before.
 4. Search again using those new words. Was it better? Write one sentence on why.
-5. Pick one result and run SIFT on it: who made it, what do other sites say
+5. Pick one result (a real web page, not the AI box) and run SIFT on it: who made it, what do other sites say
    about them, and can you trace one fact on the page back to its original
    source?
 

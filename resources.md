@@ -16,6 +16,7 @@ free to use (some have optional paid extras).
 | [Google Scholar](https://scholar.google.com) | Research papers |
 | [Bing](https://www.bing.com) | A second opinion with a different index |
 | [DuckDuckGo](https://duckduckgo.com) | Private searching, "bangs" shortcuts |
+| [DuckDuckGo without AI](https://noai.duckduckgo.com) | DuckDuckGo with all AI answers turned off |
 | [Brave Search](https://search.brave.com) | Independent index, forum discussions |
 | [Startpage](https://www.startpage.com) | Google results without tracking |
 | [Mojeek](https://www.mojeek.com) | Small independent index |

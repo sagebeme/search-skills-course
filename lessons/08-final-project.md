@@ -55,6 +55,7 @@ For each resource above, confirm:
 - [ ] I opened it by going to the **real, official website**, not through a
       random link.
 - [ ] I ran **SIFT** on it: I know who made it and what others say about them.
+- [ ] I found it on a real web page, not only in an AI answer.
 - [ ] Nothing asked me to pay to "unlock", install an unknown file, or share
       codes or passwords.
 - [ ] It's **legal**: free from the creator, an open licence, the public domain,
@@ -99,6 +100,8 @@ You can say "yes" to all of these:
 - [ ] I can turn a vague question into strong search words.
 - [ ] I can use `site:`, `filetype:`, `intitle:`, `inurl:`, quotes, `-`, `OR`
       and `before:`/`after:` without looking them up.
+- [ ] When a search starts with an AI answer, I can check its links with SIFT,
+      or switch to plain links with the "Web" filter.
 - [ ] I can find a free legal copy of a research paper, or know how to ask for one.
 - [ ] I know at least two search engines besides Google and when to use them.
 - [ ] I can find, preview and judge a Telegram channel before joining.

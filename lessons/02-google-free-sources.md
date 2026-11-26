@@ -104,6 +104,10 @@ holds:
   fact-checking).
 - A free resource **disappeared** from the original site.
 
+> Older guides tell you to use Google's `cache:` command or "Cached" link to see
+> a saved copy of a page. Google removed both in 2024, so use the Wayback
+> Machine instead.
+
 **Save pages yourself:** on the Wayback Machine home page, use **"Save Page
 Now"** to make a permanent copy of something important before it vanishes.
 

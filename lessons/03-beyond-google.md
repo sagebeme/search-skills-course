@@ -10,7 +10,8 @@ each one beats Google.
 ## Why look beyond Google?
 
 Google is good, but it's a business. Its first results are often ads, big
-brands, or pages built to rank well rather than to teach well. Other tools can
+brands, or pages built to rank well rather than to teach well. More and more
+often, the very top is an AI-written answer instead of a link (Lesson 01). Other tools can
 show you different corners of the web, and many are made by non-profits whose
 only goal is to share knowledge.
 
@@ -31,6 +32,22 @@ You don't have to replace Google. Just keep a few other tools in your pocket.
 
 **Habit to build:** if Google gives you junk twice in a row, try the same search
 on one other engine before giving up.
+
+### AI answers on other search engines too
+
+Bing and DuckDuckGo can also put an AI-written answer above the links. The same
+rule applies as on Google: it can be wrong, so check the pages it links to
+(SIFT, Lesson 00). Here's how to hide it:
+
+- **Bing** calls its AI answers **Copilot**. Add `-ai` to the end of your search,
+  for example `photosynthesis -ai`. Unlike on Google, this is an official Bing
+  feature, made by Microsoft. Bing has no setting to switch AI answers off for
+  good.
+- **DuckDuckGo** calls its AI answers **Search Assist**. To switch them off: open
+  DuckDuckGo's **Search Settings**, then **AI Features**, choose
+  **Never** next to "Search Assist", and click **Save and Exit**. Or simply search
+  at [noai.duckduckgo.com](https://noai.duckduckgo.com): it's normal DuckDuckGo
+  with every AI feature turned off, and AI-made pictures removed.
 
 ---
 
@@ -99,7 +116,8 @@ Wikipedia's sister projects, all free:
   words. **But they make things up**, including fake book titles, fake quotes
   and fake references, and sound very sure while doing it. Treat an AI answer
   as a *starting point*, then confirm it with a real source using the SIFT
-  method from Lesson 00.
+  method from Lesson 00. The same goes for the AI answers at the top of Google,
+  Bing and DuckDuckGo.
 
 ---
 
@@ -119,7 +137,8 @@ When you see a claim going viral, check here first:
 ## Exercise
 
 1. Do the **same search** on Google, DuckDuckGo and Marginalia. Write down one
-   good result that appeared on one engine but **not** the others.
+   good result that appeared on one engine but **not** the others. Did any of
+   them start with an AI answer? Try hiding it (on Bing, add `-ai`).
 2. Open the Wikipedia article for your topic. Scroll to "References" and find
    one **free** source listed there. Open it.
 3. Find one **free classic book** related to your topic on Project Gutenberg,

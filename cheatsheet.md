@@ -20,6 +20,19 @@
 
 Also: **Tools → Verbatim**, **Tools → Any time**, **More → Web**, **More → Forums**.
 
+## When search answers with AI first (Lessons 01, 03)
+
+An AI answer is a summary, not a source: open its links and run SIFT on them.
+
+| To get plain links on | Do this |
+|---|---|
+| Google | Click **Web** (or **More → Web**), or add `&udm=14` to the results address |
+| Google, every time | Custom search engine in Chrome or Firefox: `https://www.google.com/search?q=%s&udm=14` |
+| Bing | Add `-ai` to your search |
+| DuckDuckGo | Search Settings → AI Features → Search Assist: **Never**, or use `noai.duckduckgo.com` |
+
+Google has no off switch, and `-ai` or swear words on Google don't work reliably.
+
 ## Useful site endings
 
 `.edu` `.ac.ke` `.ac.uk` → universities · `.gov` `.go.ke` `.gov.uk` → governments ·
