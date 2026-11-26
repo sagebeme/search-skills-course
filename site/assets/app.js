@@ -316,6 +316,25 @@
     pager.innerHTML = html;
   }
 
+  /* ---------- Light / dark ---------- */
+  // Follows the device until the reader presses the button; then their choice is remembered.
+  function initTheme() {
+    var btn = $('#theme-toggle'), root = document.documentElement;
+    if (!btn) return;
+    var media = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+    function isDark() { var t = root.getAttribute('data-theme'); return t ? t === 'dark' : !!(media && media.matches); }
+    function paint() { var d = isDark(); btn.textContent = d ? 'Light mode' : 'Dark mode'; }
+    btn.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('find-it-free-theme', next); } catch (e) { /* not saved; still switches for this page */ }
+      paint();
+    });
+    if (media && media.addEventListener) media.addEventListener('change', paint);
+    paint();
+  }
+
+  initTheme();
   initHolder();
   paintCard();
   initSearch();

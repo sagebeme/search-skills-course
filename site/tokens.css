@@ -19,6 +19,34 @@
   --font-display: "Bowlby One SC", "Arial Black", sans-serif; --font-body: "Sofia Sans", ui-sans-serif, system-ui, sans-serif;
   --font-outlier: "Sofia Sans", ui-sans-serif, system-ui, sans-serif; --font-code: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --radius-card: 18px; --radius-photo: 22px; --radius-pill: 999px; --rule-hair: 1px; --rule-bar: 2px;
-  --shadow-card: 5px 6px 0 var(--color-ink); --shadow-press: 1px 1px 0 var(--color-ink);
+  --color-bar: var(--color-ink); --color-bar-ink: var(--color-paper); --color-shadow: var(--color-ink);
+  --color-on-mark: oklch(20% 0.018 45); --color-field: var(--color-white); --photo-dim: 1;
+  --shadow-card: 5px 6px 0 var(--color-shadow); --shadow-press: 1px 1px 0 var(--color-shadow);
   --tracking-display: 0.005em; --display-weight: 400;
+}
+
+/* Dark: the night-shift card. Follows the device unless the reader picks light or dark. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-paper: oklch(19% 0.016 45); --color-paper-2: oklch(24% 0.02 45); --color-paper-3: oklch(22.5% 0.018 45);
+    --color-ink: oklch(93% 0.012 70); --color-ink-2: oklch(84% 0.018 65); --color-muted: oklch(72% 0.025 60);
+    --color-rule: oklch(34% 0.022 50); --color-white: oklch(36% 0.025 50); --color-slot: oklch(26% 0.02 45);
+    --color-accent: oklch(55% 0.19 33); --color-accent-deep: oklch(49% 0.17 33); --color-accent-2: oklch(80% 0.14 68);
+    --color-focus: oklch(72% 0.14 285);
+    --color-brown: oklch(28% 0.05 45); --color-indigo: oklch(36% 0.14 285); --color-indigo-deep: oklch(27% 0.11 285);
+    --color-bar: oklch(13% 0.012 45); --color-bar-ink: oklch(93% 0.012 70); --color-shadow: oklch(9% 0.01 45);
+    --color-field: oklch(15% 0.014 45); --photo-dim: 0.88;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-paper: oklch(19% 0.016 45); --color-paper-2: oklch(24% 0.02 45); --color-paper-3: oklch(22.5% 0.018 45);
+  --color-ink: oklch(93% 0.012 70); --color-ink-2: oklch(84% 0.018 65); --color-muted: oklch(72% 0.025 60);
+  --color-rule: oklch(34% 0.022 50); --color-white: oklch(36% 0.025 50); --color-slot: oklch(26% 0.02 45);
+  --color-accent: oklch(55% 0.19 33); --color-accent-deep: oklch(49% 0.17 33); --color-accent-2: oklch(80% 0.14 68);
+  --color-focus: oklch(72% 0.14 285);
+  --color-brown: oklch(28% 0.05 45); --color-indigo: oklch(36% 0.14 285); --color-indigo-deep: oklch(27% 0.11 285);
+  --color-bar: oklch(13% 0.012 45); --color-bar-ink: oklch(93% 0.012 70); --color-shadow: oklch(9% 0.01 45);
+  --color-field: oklch(15% 0.014 45); --photo-dim: 0.88;
 }

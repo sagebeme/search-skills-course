@@ -9,6 +9,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sofia+Sans:wght@400;700&display=swap" rel="stylesheet">
+<script>
+  /* Apply the saved light/dark choice before the page paints, so it never flashes. */
+  try { var t = localStorage.getItem('find-it-free-theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -17,14 +21,17 @@
 <header class="nav">
   <div class="container nav__inner">
     <a class="wordmark" href="index.html">Find It Free</a>
-    <nav aria-label="Main">
-      <ul class="nav__links">
-        <li><a href="#lessons">Lessons</a></li>
-        <li><a href="#search">Search</a></li>
-        <li><a href="lesson.html?l=cheatsheet">Cheat sheet</a></li>
-        <li><a href="lesson.html?l=resources">Resource list</a></li>
-      </ul>
-    </nav>
+    <div class="nav__end">
+      <nav aria-label="Main">
+        <ul class="nav__links">
+          <li><a href="#lessons">Lessons</a></li>
+          <li><a href="#search">Search</a></li>
+          <li><a href="lesson.html?l=cheatsheet">Cheat sheet</a></li>
+          <li><a href="lesson.html?l=resources">Resource list</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button">Dark mode</button>
+    </div>
   </div>
 </header>
 
@@ -227,7 +234,7 @@
       </figure>
       <div class="library__text">
         <h2 id="library-title"><!-- build:sites -->
-73<!-- /build:sites --> free sites in one list</h2>
+74<!-- /build:sites --> free sites in one list</h2>
         <p class="lead">Search engines, open textbooks, research papers, public data and fact-checkers, sorted by what they are for.</p>
         <div class="actions">
           <a class="btn btn--primary" href="lesson.html?l=resources">Open the resource list</a>
