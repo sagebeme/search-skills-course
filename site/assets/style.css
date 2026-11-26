@@ -2,8 +2,8 @@
  * hero: Stage, the library card on 7 columns · nav: edge-aligned, wordmark and four links · footer: mast · imagery: screenshots 7 (the tools each lesson teaches), library photos 4 (Wikimedia Commons) · signature: the library card that gets a date stamp per finished lesson · sticker: sheet
  * axes: light/display-heavy/chromatic-red-orange · posture: full-palette (vermilion acts, marigold marks, brown band, indigo field) · contrast: pass · fold: pass · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R3 V4 · weakest: R (nine identical-shape lesson cards), broken with alternate tilts, a lead card spanning two columns and real screenshots per card */
-@import url("../tokens.css");
-@import url("../base.css");
+@import url("../tokens.css?v=9830673c");
+@import url("../base.css?v=75f3de92");
 
 /* ---------- Page ---------- */
 body { font-size: 1.0625rem; }

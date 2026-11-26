@@ -9,6 +9,7 @@
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 
 const SITE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(SITE, '..');
@@ -88,5 +89,26 @@ put('grid', grid);
 put('count', `${lessons.length}`);
 put('sites', `${siteCount}`);
 writeFileSync(indexPath, html);
+
+// ----- Version stamps -----
+// GitHub Pages lets browsers keep CSS and JS for 10 minutes, so after an update a visitor can get
+// new HTML with old styles. Each link gets ?v=<fingerprint of the file>, which changes whenever the
+// file does, so browsers fetch the new copy at once. style.css's own @imports are stamped first,
+// because they change style.css's fingerprint.
+const stamp = (rel) => createHash('sha1').update(readFileSync(join(SITE, rel))).digest('hex').slice(0, 8);
+const restamp = (path, pattern, rel) => {
+  const s = read(path);
+  const out = s.replace(pattern, (_, start) => `${start}?v=${stamp(rel)}"`);
+  if (out !== s) writeFileSync(path, out);
+};
+const cssPath = join(SITE, 'assets', 'style.css');
+restamp(cssPath, /(url\("\.\.\/tokens\.css)(?:\?v=\w+)?"/, 'tokens.css');
+restamp(cssPath, /(url\("\.\.\/base\.css)(?:\?v=\w+)?"/, 'base.css');
+for (const page of ['index.html', 'lesson.html']) {
+  for (const rel of ['assets/style.css', 'assets/app.js', 'assets/course-data.js']) {
+    const name = rel.replace(/[.]/g, '\\.');
+    restamp(join(SITE, page), new RegExp(`((?:href|src)="${name})(?:\\?v=\\w+)?"`, 'g'), rel);
+  }
+}
 
 console.log(`built ${lessons.length} lessons, ${Object.keys(extras).length} extra pages, ${siteCount} sites in the resource list`);
